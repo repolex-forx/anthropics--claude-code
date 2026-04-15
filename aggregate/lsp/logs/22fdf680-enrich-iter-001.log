@@ -1,0 +1,16 @@
+[2026-04-15T23:25:44Z] === ENRICH ITERATION 1 START | repo=anthropics/claude-code sha=22fdf680 ===
+[2026-04-15T23:25:44Z] [iter=1] PHASE START: enrich repo=anthropics/claude-code sha=22fdf680 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/22fdf680-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/22fdf68049e8c24e5a36087bb742857d3d5e407d.nq.gz
+[2026-04-15T23:25:44Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-15T23:25:45Z] [iter=1] AST store loaded triples=67191 load_secs=0 mem_mb=181 MB
+[2026-04-15T23:25:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=181 MB
+[2026-04-15T23:25:45Z] [iter=1] LSP targets found call_sites=448 imports=43 extends=0 implements=0 secs=0
+[2026-04-15T23:25:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=181 MB
+[2026-04-15T23:25:45Z] [iter=1] Position index built positions=4740 nodes_with_types=5841 secs=0 mem_mb=181 MB
+[2026-04-15T23:25:45Z] [iter=1] Step 3: Starting LSP resolution mem_mb=181 MB already_completed_types=[] already_completed_files=0
+[2026-04-15T23:25:45Z] [iter=1] Resolving target type target_type=call_site count=448
+[2026-04-15T23:25:56Z] [iter=1] Target type resolved target_type=call_site resolved=205 errors=210 secs=11 mem_mb=181 MB
+[2026-04-15T23:25:56Z] [iter=1] Resolving target type target_type=import_statement count=43
+[2026-04-15T23:26:00Z] [iter=1] Target type resolved target_type=import_statement resolved=33 errors=0 secs=3 mem_mb=181 MB
+[2026-04-15T23:26:03Z] [iter=1] Step 5: Writing final enrichment file triples=4995
+[2026-04-15T23:26:03Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/22fdf68049e8c24e5a36087bb742857d3d5e407d.nq.gz size_kb=83
+[2026-04-15T23:26:03Z] [iter=1] PHASE END: enrich elapsed_s=19 elapsed_min=0.3 total_triples=4995
